@@ -1,9 +1,9 @@
 const userAge = Number(prompt("Please enter your age:"))
-if (userAge < 0) {
+if (userAge < 0 || Number.isNan(userAge)) {
     alert("Please enter your data right.")
 } 
 const userTravellingDistance = Number(prompt("Please enter the distance (in km) from this station to the station you want to treavell:"))
-if (userTravellingDistance < 0 || userTravellingDistance > 9259) {
+if (userTravellingDistance < 0 || userTravellingDistance > 9259 || Number.isNan(userTravellingDistance)) {
     alert("Please enter your data right.")
 }
 
